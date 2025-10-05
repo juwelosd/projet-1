@@ -9,8 +9,6 @@ document.getElementById("mul").innerHTML = a * b;
 
 document.getElementById("div").innerHTML = a / b;
 
-
-
 // ===conditional=== mini-project===start====
 
 const myInput = document.getElementById("myInput");
@@ -36,34 +34,28 @@ myButton.onclick = function () {
 
 // ===conditional=== mini-project===end====
 
+// ===For loop===
 
-  // ===For loop===
-
-let num = 6;
+let num = 7;
 
 for (let i = 1; i <= 10; i++) {
- document.writeln( num , "*", i, "=", num * i,'<br>');
+  document.writeln(num, "*", i, "=", num * i, "<br>");
 }
-
 
 // === while===
 
- 
-
-
 // ===Do while===
-'<br>'
+("<br>");
 let i = 1;
 let main = 5;
 do {
-  document.writeln( main,"+", i, "=", main + i, '<br>')
+  document.writeln(main, "+", i, "=", main + i, "<br>");
   i++;
-
-} while (i<=20);
+} while (i <= 20);
 
 // === while===
 let v = 1;
-while (v <= 100 ) {
-  document.writeln(""+v);
+while (v <= 100) {
+  document.writeln("" + v);
   v++;
 }
