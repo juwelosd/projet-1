@@ -11,6 +11,7 @@ document.getElementById("div").innerHTML = a / b;
 
 // ===conditional=== mini-project===start====
 
+
 const myInput = document.getElementById("myInput");
 const myButton = document.getElementById("myButton");
 const resultElement = document.getElementById("resultElement");
@@ -55,7 +56,22 @@ do {
 
 // === while===
 let v = 1;
-while (v <= 100) {
+while (v <= 50) {
   document.writeln("" + v);
   v++;
+}
+
+
+// ===callback===function===
+
+sum(displayConsol, 20, 30);
+function sum(callback, x, y) {
+  let result = x + y;
+  callback(result);
+}
+function displayConsol(result) {
+  document.writeln(result);
+}
+function display(result) {
+  document.getElementById("my-roll").textContent = result, '<br>';
 }
