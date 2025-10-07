@@ -1,4 +1,4 @@
-// ===== Operators====
+// <-------------Operators---------->
 let a = 25;
 let b = 14;
 document.getElementById("add").innerHTML = a + b;
@@ -9,8 +9,7 @@ document.getElementById("mul").innerHTML = a * b;
 
 document.getElementById("div").innerHTML = a / b;
 
-// ===conditional=== mini-project===start====
-
+// <---------conditional=== mini-project===start----------->
 
 const myInput = document.getElementById("myInput");
 const myButton = document.getElementById("myButton");
@@ -33,9 +32,9 @@ myButton.onclick = function () {
   }
 };
 
-// ===conditional=== mini-project===end====
+// <-------conditional=== mini-project===end--------->
 
-// ===For loop===
+// <-------For loop---------->
 
 let num = 7;
 
@@ -43,9 +42,8 @@ for (let i = 1; i <= 10; i++) {
   document.writeln(num, "*", i, "=", num * i, "<br>");
 }
 
-// === while===
 
-// ===Do while===
+// <---------Do while-------->
 ("<br>");
 let i = 1;
 let main = 5;
@@ -54,15 +52,8 @@ do {
   i++;
 } while (i <= 20);
 
-// === while===
-let v = 1;
-while (v <= 50) {
-  document.writeln("" + v);
-  v++;
-}
 
-
-// ===callback===function===
+// <----------callback===function---------->
 
 sum(displayConsol, 20, 30);
 function sum(callback, x, y) {
@@ -73,5 +64,36 @@ function displayConsol(result) {
   document.writeln(result);
 }
 function display(result) {
-  document.getElementById("my-roll").textContent = result, '<br>';
+  (document.getElementById("my-roll").textContent = result), "<br>";
 }
+
+
+
+
+// <-----------Array toString, person , length , for , Array.forEach, push, pop, shift, unshift, new Array,--------------------->
+
+// <------toString------>
+const foots = ["Amm", "Kola", "Lichu", "Jam"];
+let list = foots.toString();
+document.getElementById("foots").innerHTML = list;
+
+// <-------person------>
+const person = { firstName:"Aksh", secondName:"Nli", thirdName:"Niloy", age:50};
+document.getElementById("per").innerHTML = person.thirdName ;
+
+// <------length------>
+const hight=["Banana", "Orange", "Apple", "Mango"]
+let xmp =hight.length
+document.getElementById("hig").innerHTML = xmp;
+
+// <--------for------>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let my = fruits.length;
+let text = "<ul>";
+for (let i = 0; i < my; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+document.getElementById("sting").innerHTML = text;
+
+
